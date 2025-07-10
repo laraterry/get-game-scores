@@ -22,6 +22,7 @@ def get_baseball_games(date):
     }
     response = requests.get(url, headers=headers)
     return response.json()
+    
 
 def filter_baseball_games(data, team_name):
     """
@@ -41,4 +42,6 @@ def filter_baseball_games(data, team_name):
             away_score = match["scores"]["away"]["total"]
             filtered.append((home, home_score, away_score, away))
     return filtered
+
+    
 
