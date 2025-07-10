@@ -9,8 +9,10 @@ load_dotenv()
 
 
 def main():
-    team = input("Enter a football team name: ").strip().lower()
+    sport = input("Enter your sport here: ").strip().lower()
     date = get_yesterdays_date()
+
+    if sport == 
     data = get_football_matches(date)
     matches = filter_football_matches(data, team)
 
